@@ -6,11 +6,11 @@ cask "brewery" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "brewery"], chdir: "."
   end
 
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     on_arm do
-      sha256 "e6280d95f62d95a3b23b9eda62e2d81c5906f3ebf15a8ca632e3ff46bbaa1740"
+      sha256 "7ddcfab2b05535d2eb67aa8bcf5ac4b2dbb5cdc970ad6010544773d5e499a290"
       url "https://github.com/dillo/brewery/releases/download/v#{version}/brewery_#{version}_darwin_arm64.tar.gz"
     end
   end
